@@ -1,0 +1,9 @@
+[user]
+	email = huangliang1203@hotmail.com
+	name = Sammy Huang
+[https]
+     proxy = https://127.0.0.1:41091
+[http]
+     proxy = http://127.0.0.1:41091
+
+

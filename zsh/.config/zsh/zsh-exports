@@ -30,3 +30,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# http proxy
+export https_proxy="http://localhost:41091"
+export http_proxy="http://localhost:41091"
+
+
+#export JAVA_HOME="/usr/local/opt/openjdk@11"
+export JAVA_HOME="/usr/local/opt/java"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+
+[[ -s "/Users/admin/.gvm/scripts/gvm" ]] && source "/Users/admin/.gvm/scripts/gvm"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

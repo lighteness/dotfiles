@@ -101,7 +101,7 @@ window:
   history: 10000
   #   # Number of lines the viewport will move for every line scrolled when
   #   # scrollback is enabled (history > 0).
-  #   multiplier: 10
+  multiplier: 10
 
 # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true

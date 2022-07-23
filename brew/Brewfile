@@ -27,6 +27,10 @@ brew "gdk-pixbuf"
 brew "universal-ctags"
 # Source code tag system
 brew "global"
+# Render markdown on the CLI
+brew "glow"
+# Reformats Java source code to comply with Google Java Style
+brew "google-java-format"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Library to render SVG files using Cairo

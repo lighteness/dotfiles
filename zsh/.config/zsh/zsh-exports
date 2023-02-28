@@ -34,6 +34,8 @@ unset __conda_setup
 export https_proxy="http://localhost:41091"
 export http_proxy="http://localhost:41091"
 
+# kubectl krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 #export JAVA_HOME="/usr/local/opt/openjdk@11"
 export JAVA_HOME="/usr/local/opt/java"

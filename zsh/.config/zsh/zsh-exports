@@ -43,9 +43,16 @@ export GOBIN="/Users/samhuang/.gvm/pkgsets/go1.19.3/global/bin"
 export PATH="$GOBIN:$PATH"
 
 #export JAVA_HOME="/usr/local/opt/openjdk@11"
-export JAVA_HOME="/usr/local/opt/java"
-export PATH="$JAVA_HOME/bin:$PATH"
+#export JAVA_HOME="/usr/local/opt/java"
+export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.17.jdk/Contents/Home
+export JAVA_14_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home
+export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home
+#export PATH="$JAVA_HOME/bin:$PATH"
 
+export MAVEN_HOME="/opt/apache-maven-3.8.6"
+export PATH="$MAVEN_HOME/bin:$PATH"
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 [[ -s "/Users/admin/.gvm/scripts/gvm" ]] && source "/Users/admin/.gvm/scripts/gvm"
 

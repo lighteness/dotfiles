@@ -2,71 +2,81 @@ tap "homebrew/bundle"
 tap "homebrew/cask", "https://mirrors.ustc.edu.cn/homebrew-cask.git"
 tap "homebrew/cask-fonts", "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git"
 tap "homebrew/core"
+tap "lencx/chatgpt", "https://github.com/lencx/ChatGPT.git"
 tap "universal-ctags/universal-ctags"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Core application library for C
-brew "glib"
-# Cross-platform make
+
+brew "aom"
+brew "aws-nuke"
+brew "awscli"
 brew "cmake"
-# GNU Ubiquitous Intelligent Language for Extensions
-brew "guile"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
-# Maintained ctags implementation
-brew "universal-ctags"
-# Source code tag system
+brew "glib"
 brew "global"
-# Render markdown on the CLI
 brew "glow"
-# Reformats Java source code to comply with Google Java Style
+brew "gnutls"
+brew "gobject-introspection"
 brew "google-java-format"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# Library to render SVG files using Cairo
-brew "librsvg"
-# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# Update of iperf: measures TCP, UDP, and SCTP bandwidth
+brew "guile"
+brew "harfbuzz"
+brew "helm"
 brew "iperf3"
-# Run local Kubernetes cluster in Docker
+brew "jpeg-xl"
+brew "jq"
+brew "kind"
 brew "kind", link: false
-# Template-free customization of Kubernetes YAML manifests
+brew "kubernetes-cli"
 brew "kustomize"
-# Simple terminal UI for git commands
 brew "lazygit"
-# Java-based project management
+brew "librsvg"
 brew "maven"
-# Ambitious Vim-fork focused on extensibility and agility
+brew "mercurial"
 brew "neovim"
-# HTTP/2 C Library
 brew "nghttp2"
-# Development kit for the Java programming language
+brew "node"
 brew "openjdk@11"
-# Search tool like grep and The Silver Searcher
+brew "pango"
+brew "python@3.9"
+brew "qemu"
 brew "ripgrep"
-# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# CLI for interacting with TektonCD
 brew "tektoncd-cli"
-# Terminal multiplexer
+brew "telnet"
+brew "terraform"
+brew "tesseract"
 brew "tmux"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Vi 'workalike' with many additional features
+brew "unbound"
+brew "universal-ctags"
 brew "vim"
-# JavaScript package manager
+brew "wget"
 brew "yarn"
-# GPU-accelerated terminal emulator
+brew "zoxide"
+brew "zsh"
 cask "alacritty"
+cask "chatgpt"
 cask "font-hack-nerd-font"
+cask "openlens"
+
+
+vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
+vscode "GitHub.copilot-labs"
+vscode "James-Yu.latex-workshop"
+vscode "LeetCode.vscode-leetcode"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "golang.go"
+vscode "hoovercj.vscode-settings-cycler"
+vscode "jeff-hykin.better-dockerfile-syntax"
+vscode "marquesmps.dockerfile-validator"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "redhat.java"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"

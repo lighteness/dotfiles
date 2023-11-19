@@ -56,6 +56,18 @@ alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/
 alias m="git checkout master"
 alias s="git checkout stable"
 
+
+alias k='kubectl'
+alias kn='kubectl ns'
+alias kx='kubectl ctx'
+
+alias tg='terragrunt'
+
+
+alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+alias jdk14="export JAVA_HOME=$JAVA_14_HOME"
+alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
+
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi

@@ -35,3 +35,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f | tr '\n' ':')

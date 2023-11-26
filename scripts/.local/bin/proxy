@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# http proxy
+function proxy_on() {
+    export https_proxy="http://localhost:7890"
+    export http_proxy="http://localhost:7890"
+    echo -e "Proxy on"
+}
+
+function proxy_off() {
+    unset https_proxy
+    unset http_proxy
+    echo -e "Proxy off"
+}
+
+# if parameter is on, then turn on proxy , else turn off proxy
+function proxy() {
+    if [ "$1" == "on" ]; then
+        proxy_on
+    elif [ "$1" == "off" ]; then
+        proxy_off
+    else
+        echo -e "Usage: proxy [on|off]"
+    fi
+}
+
+proxy $1

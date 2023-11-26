@@ -51,7 +51,7 @@ brew "zoxide"
 brew "zsh"
 
 cask "alacritty"
-cask "chatgpt"
+#cask "chatgpt"
 cask "font-hack-nerd-font"
 cask "openlens"
 

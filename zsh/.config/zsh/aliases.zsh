@@ -60,6 +60,7 @@ alias s="git checkout stable"
 alias k='kubectl'
 alias kn='kubectl ns'
 alias kx='kubectl ctx'
+alias kk='k9s'
 
 alias tg='terragrunt'
 
@@ -67,6 +68,9 @@ alias tg='terragrunt'
 alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
 alias jdk14="export JAVA_HOME=$JAVA_14_HOME"
 alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
+
+alias vim="nvim"
+alias vi="nvim"
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
@@ -90,3 +94,5 @@ CYGWIN* | MINGW32* | MSYS* | MINGW*)
 	# echo 'Other OS'
 	;;
 esac
+
+

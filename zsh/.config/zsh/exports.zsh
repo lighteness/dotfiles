@@ -35,7 +35,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f | tr '\n' ':')
+#export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f -not -name 'kubectx' | tr '\n' ':')
 
 
 # http proxy

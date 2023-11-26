@@ -6,6 +6,7 @@
 HISTFILE=~/.zsh_history
 
 # source
+plug "$HOME/.config/zsh/kube.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 

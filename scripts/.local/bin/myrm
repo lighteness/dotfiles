@@ -1,0 +1,8 @@
+find . -type f -exec sh -c '
+    file="$1"
+    dir=$(dirname "$file")
+    base=$(basename "$file")
+    new_base=${base//【*】/}
+    new_file="$dir/$new_base"
+    mv "$file" "$new_file"
+' sh {} \;

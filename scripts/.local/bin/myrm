@@ -1,8 +1,56 @@
-find . -type f -exec sh -c '
-    file="$1"
-    dir=$(dirname "$file")
-    base=$(basename "$file")
-    new_base=${base//【*】/}
-    new_file="$dir/$new_base"
-    mv "$file" "$new_file"
-' sh {} \;
+#!/bin/bash
+
+function rm_chinese_brace(){
+    find . -type f -exec sh -c '
+        file="$1"
+        dir=$(dirname "$file")
+        base=$(basename "$file")
+        new_base=${base//【*】/}
+        new_file="$dir/$new_base"
+        mv "$file" "$new_file"
+    ' sh {} \;
+}
+function rm_brace(){
+    find . -type f -exec sh -c '
+        file="$1"
+        dir=$(dirname "$file")
+        base=$(basename "$file")
+        new_base=${base//\[*\]/}
+        new_file="$dir/$new_base"
+        mv "$file" "$new_file"
+    ' sh {} \;
+}
+
+function rm_url(){
+    find . -name "*.url" -exec rm {} \;
+}
+
+function rm_1(){
+        find . -type f -exec sh -c '
+        file="$1"
+        dir=$(dirname "$file")
+        base=$(basename "$file")
+        new_base=${base//~1/}
+        new_file="$dir/$new_base"
+        mv "$file" "$new_file"
+    ' sh {} \;
+}
+
+
+# if input is b, invoke rm_brace
+# if input is u, invoke rm_url
+function main(){
+    if [ "$1" == "b" ]; then
+        rm_brace
+    elif [ "$1" == "c" ]; then
+        rm_chinese_brace
+    elif [ "$1" == "u" ]; then
+        rm_url
+    elif [ "$1" == "1" ]; then
+        rm_1
+    else
+        echo "Usage: myrm [b|c|u|1]"
+    fi
+}
+
+main $@

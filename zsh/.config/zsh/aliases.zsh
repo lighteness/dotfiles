@@ -1,4 +1,5 @@
 #!/bin/sh
+alias l='lvim'
 alias j='z'
 alias f='zi'
 alias g='lazygit'

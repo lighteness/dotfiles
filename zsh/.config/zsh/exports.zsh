@@ -58,5 +58,5 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 #export PATH="$MAVEN_HOME/bin:$PATH"
 
 # GOBIN
-export GOBIN="/Users/samhuang/.gvm/pkgsets/go1.19.3/global/bin"
-export PATH="$GOBIN:$PATH"
+#export PATH="$GOBIN:$PATH"
+#export GOBIN="/Users/samhuang/.gvm/pkgsets/go1.19.3/global/bin"

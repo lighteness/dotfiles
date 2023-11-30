@@ -69,13 +69,8 @@ k9s:
         active: towhee
         lockFavorites: false
         favorites:
-        - kube-system
-        - grafana
         - towhee
-        - event-exporter
-        - efk
         - prow
-        - default
       view:
         active: pods
       featureGates:

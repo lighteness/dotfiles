@@ -1,0 +1,32 @@
+ #!/bin/bash
+ 
+
+function mv_pdf(){
+  mkdir -p pdf
+  find . -name "*.pdf" -exec mv {} ./pdf \;
+}
+
+function mv_txt(){
+  mkdir -p txt
+  find . -name "*.txt" -exec mv {} ./txt \;
+}
+
+function mv_mp3(){
+  mkdir -p mp3
+  find . -name "*.mp3" -exec mv {} ./mp3 \;
+}
+
+
+function main(){
+  if [ "$1"== "p" ];then
+    mv_pdf
+  elif [ "$1" == "t" ];then
+    mv_txt
+  elif [ "$1" == "m" ];then
+    mv_mp3
+  else
+    echo "Usage: mymv [p|t|m]"
+  fi
+}
+
+main $@

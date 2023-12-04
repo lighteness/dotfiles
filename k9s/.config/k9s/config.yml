@@ -7,7 +7,7 @@ k9s:
   logoless: true
   crumbsless: false
   readOnly: false
-  noExitOnCtrlC: false
+  noExitOnCtrlC: true
   noIcons: false
   skipLatestRevCheck: false
   logger:

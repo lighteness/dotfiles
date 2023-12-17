@@ -458,5 +458,7 @@
     "leetcode.hint.commandShortcut": false,
     "leetcode.hint.configWebviewMarkdown": false,
     "files.autoSave": "afterDelay",
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace"
 }

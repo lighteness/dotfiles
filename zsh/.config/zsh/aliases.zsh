@@ -73,6 +73,12 @@ alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
 alias vim="nvim"
 alias vi="nvim"
 
+alias t="tmux"
+alias tn="tmux new-session"
+alias tk="tmux kill-session"
+alias ta="tmux attach"
+alias tr="tmux rename-session"
+
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi

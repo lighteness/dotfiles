@@ -325,8 +325,7 @@
         {
             "before": [
                 "<leader>",
-                "x",
-                "3"
+                "|"
             ],
             "commands": [
                 "workbench.action.splitEditorRight"
@@ -335,8 +334,7 @@
         {
             "before": [
                 "<leader>",
-                "x",
-                "2"
+                "_"
             ],
             "commands": [
                 "workbench.action.splitEditorDown"

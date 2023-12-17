@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+k ctrl+alt+o",
+        "command": "settings.cycle.copilot",
+    },
+    {
+        "key": "alt+s",
+        "command": "leetcode.submitSolution"
+    },
+    {
+        "key": "F12",
+        "command": "workbench.action.togglePanel"
+    },
+]

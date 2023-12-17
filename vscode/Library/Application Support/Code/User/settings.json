@@ -58,8 +58,7 @@
         {
             "before": [
                 "<leader>",
-                "c",
-                "i"
+                "/"
             ],
             "commands": [
                 "editor.action.commentLine"
@@ -160,8 +159,7 @@
         {
             "before": [
                 "<leader>",
-                "c",
-                "i"
+                "/"
             ],
             "commands": [
                 "editor.action.commentLine"

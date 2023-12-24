@@ -8,4 +8,5 @@ require("modules.helloworld")
 
 require("modules.applications")
 
+require("modules.window")
 

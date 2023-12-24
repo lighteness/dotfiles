@@ -6,5 +6,6 @@ require("modules.inputmethods")
 
 require("modules.helloworld")
 
+require("modules.applications")
 
 

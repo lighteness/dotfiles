@@ -13,7 +13,7 @@ applications = {
     {prefix = {"Option"}, key = "F", message="Finder", bundleId="com.apple.finder"},
     {prefix = {"Option"}, key = "C", message="Chrome", bundleId="com.google.Chrome"},
     {prefix = {"Option"}, key = "O", message="onenote", bundleId="com.microsoft.onenote.mac"},
-    {prefix = {"Option"}, key = "L", message="Lark", bundleId="com.electron.lark"},
+    {prefix = {"Option"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
     {prefix = {"Option"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
 }
 

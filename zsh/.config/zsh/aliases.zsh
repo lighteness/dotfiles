@@ -79,6 +79,10 @@ alias tk="tmux kill-session"
 alias ta="tmux attach"
 alias tr="tmux rename-session"
 
+alias cat="bat"
+alias tree="exa -T"
+alias ls="exa"
+
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"
 fi

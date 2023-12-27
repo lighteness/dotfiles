@@ -78,7 +78,8 @@ windows = {
     -- 右 2/3（横屏）或下 2/3（竖屏）
     right_2_3 = {prefix = {"Ctrl", "Option"}, key = "T", message = "Right 2/3(Horizontal screen)Or Bottom 2/3(Vertical screen)"},
     -- 居中
-    center = {prefix = {"Ctrl", "Option"}, key = "C", message = "Center"},
+  -- disable it and leave it for snapshot
+    center = {prefix = {"Ctrl", "Option"}, key = "M", message = "Center"},
     -- 等比例放大窗口
     zoom = {prefix = {"Ctrl", "Option"}, key = "=", message = "Zoom Window"},
     -- 等比例缩小窗口

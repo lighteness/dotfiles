@@ -78,6 +78,7 @@ alias tn="tmux new-session"
 alias tk="tmux kill-session"
 alias ta="tmux attach"
 alias tr="tmux rename-session"
+alias mux="tmuxinator"
 
 alias cat="bat"
 alias tree="exa -T"

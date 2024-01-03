@@ -55,5 +55,6 @@ windows:
   - git: lazygit
   - workspace: cd .
   - dev-infra-api: export KUBECONFIG=~/.kube/dev-infra-api
+  - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
   - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
   - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2 

@@ -51,4 +51,6 @@ windows:
   - sit: export KUBECONFIG=/Users/samhuang/.kube/3-sit-vdc-test
   - 4am: export KUBECONFIG=/Users/samhuang/.kube/4am-config
   - dev-infra-api: export KUBECONFIG=/Users/samhuang/.kube/dev-infra-api
+  - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
+
   

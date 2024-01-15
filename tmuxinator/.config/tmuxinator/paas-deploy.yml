@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/p3.yml
+# /Users/samhuang/.config/tmuxinator/paas-deploy.yml
 
-name: knowhere
-root: ~/git/knowhere
+name: paas-deploy
+root: ~/git/01.controller/paas-deploy
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,6 +51,5 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - l .
-  - git: lazygit 
-  - logs: 
+        - lvim .
+  - git: lazygit

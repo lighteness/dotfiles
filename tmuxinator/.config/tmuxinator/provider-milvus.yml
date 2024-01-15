@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/p3.yml
+# /Users/samhuang/.config/tmuxinator/provider-milvus.yml
 
-name: knowhere
-root: ~/git/knowhere
+name: provider-milvus
+root: ~/git/02.miluvs/provider-milvus
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,6 +51,4 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - l .
-  - git: lazygit 
-  - logs: 
+        - lvim .

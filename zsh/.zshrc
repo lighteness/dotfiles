@@ -35,4 +35,4 @@ if command -v bat &> /dev/null; then
   alias catt="bat --theme \"Visual Studio Dark+\"" 
 fi
 
-[[ -s "/Users/admin/.gvm/scripts/gvm" ]] && source "/Users/admin/.gvm/scripts/gvm"
+[[ -s "/Users/samhuang/.gvm/scripts/gvm" ]] && source "/Users/samhuang/.gvm/scripts/gvm"

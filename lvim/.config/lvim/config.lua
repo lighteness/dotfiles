@@ -18,4 +18,10 @@ table.insert(lvim.plugins, {
   end,
 })
 
+table.insert(lvim.plugins, {
+  "Pocco81/auto-save.nvim",
+  config = function()
+    require("auto-save").setup()
+  end,
+})
 

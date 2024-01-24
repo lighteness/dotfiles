@@ -2,3 +2,4 @@
 scripts/.local/bin/lvim
 tmux/.config/tmux/plugins
 lvim/.config/lvim/lazy-lock.json
+k9s/.config/k9s

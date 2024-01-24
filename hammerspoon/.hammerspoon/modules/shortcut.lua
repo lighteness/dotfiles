@@ -16,8 +16,9 @@ applications = {
     {prefix = {"Option"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
     {prefix = {"Option"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
     {prefix = {"Option"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    {prefix = {"Option"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"Option"}, key = "M", message="email", bundleId="com.apple.mail"},
-    {prefix = {"Option"}, key = "1", message="things3", bundleId="com.culturedcode.ThingsMac"},
+    {prefix = {"Option"}, key = "2", message="things3", bundleId="com.culturedcode.ThingsMac"},
     {prefix = {"Option", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"Option"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
 

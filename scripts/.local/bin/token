@@ -1,0 +1,3 @@
+ #!/bin/bash
+ kubectl get secret resource-manager-token -n infra -o yaml | grep 'token:' | awk '{print $2}' | base64 -d | pbcopy
+

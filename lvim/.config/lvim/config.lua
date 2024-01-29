@@ -237,3 +237,4 @@ table.insert(lvim.plugins, {
 })
 
 
+vim.cmd("packadd cfilter")

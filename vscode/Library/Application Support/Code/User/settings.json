@@ -98,6 +98,32 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
+                "<C-]>"
+            ],
+            "commands": [
+                "workbench.action.togglePanel"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
                 "<leader>",
                 "e"
             ],
@@ -108,8 +134,8 @@
         {
             "before": [
                 "<leader>",
-                "r",
-                "v"
+                "l",
+                "r"
             ],
             "commands": [
                 "editor.action.rename"

@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/infra-controller.yml
+# /Users/samhuang/.config/tmuxinator/provider-terraform.yml
 
-name: infra-controller
-root: /Users/samhuang/git/01.controller/infra-controller
+name: provider-terraform
+root: ~/git/provider-terraform
 
 # Optional tmux socket
 # socket_name: foo
@@ -52,8 +52,7 @@ windows:
       # synchronize: after
       panes:
         - editor:
-          - gvm use go1.18.10
+          - gvm use go1.21.3
           - lvim .
   - git: lazygit
   - workspace: cd .
-

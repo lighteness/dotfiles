@@ -51,11 +51,8 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - lvim .
+        - editor:
+            - gvm use go1.18.10
+            - lvim .
   - git: lazygit
   - workspace: cd .
-  - dev-infra-api: export KUBECONFIG=~/.kube/dev-infra-api
-  - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
-  - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
-  - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2 
-  - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1

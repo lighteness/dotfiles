@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/infra-controller.yml
+# /Users/samhuang/.config/tmuxinator/k9s.yml
 
-name: infra-controller
-root: /Users/samhuang/git/01.controller/infra-controller
+name: k9s-uat
+root: ~/.kube/
 
 # Optional tmux socket
 # socket_name: foo
@@ -45,15 +45,19 @@ root: /Users/samhuang/git/01.controller/infra-controller
 # attach: false
 
 windows:
-  - editor:
-      layout: main-vertical
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
+  - byoc-uat:
       panes:
-        - editor:
-          - gvm use go1.18.10
-          - lvim .
-  - git: lazygit
-  - workspace: cd .
-
+        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
+        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
+  - infra-dev:
+      panes:
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+  - ali-uat:
+      panes:
+        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
+        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
+  - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
+  - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
+  - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2
+  - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1

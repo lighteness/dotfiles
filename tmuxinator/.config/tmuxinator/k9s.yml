@@ -1,7 +1,7 @@
 # /Users/samhuang/.config/tmuxinator/k9s.yml
 
 name: k9s
-root: ~/
+root: ~/.kube/
 
 # Optional tmux socket
 # socket_name: foo
@@ -45,13 +45,33 @@ root: ~/
 # attach: false
 
 windows:
-  - ci: export KUBECONFIG=/Users/samhuang/.kube/ci.config
-  - ci-sh(knowhere): export KUBECONFIG=/Users/samhuang/.kube/ci-sh.config
-  - k8s-us1: export KUBECONFIG=/Users/samhuang/.kube/k8s-us1
-  - sit: export KUBECONFIG=/Users/samhuang/.kube/3-sit-vdc-test
-  - 4am: export KUBECONFIG=/Users/samhuang/.kube/4am-config
-  - dev-infra-api: export KUBECONFIG=/Users/samhuang/.kube/dev-infra-api
-  - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
-  - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
-
-  
+  - ci:
+      panes:
+        - ci: export KUBECONFIG=/Users/samhuang/.kube/ci.config
+        - ci: export KUBECONFIG=/Users/samhuang/.kube/ci.config
+  - ci-sh(knowhere):
+      panes:
+        - ci-sh(knowhere): export KUBECONFIG=/Users/samhuang/.kube/ci-sh.config
+        - ci-sh(knowhere): export KUBECONFIG=/Users/samhuang/.kube/ci-sh.config
+  - k8s-us1:
+      panes:
+        - k8s-us1: export KUBECONFIG=/Users/samhuang/.kube/k8s-us1
+        - k8s-us1: export KUBECONFIG=/Users/samhuang/.kube/k8s-us1
+  - sit:
+      panes:
+        - sit: export KUBECONFIG=/Users/samhuang/.kube/3-sit-vdc-test
+        - sit: export KUBECONFIG=/Users/samhuang/.kube/3-sit-vdc-test
+  - 4am:
+      panes:
+        - 4am: export KUBECONFIG=/Users/samhuang/.kube/4am-config
+        - 4am: export KUBECONFIG=/Users/samhuang/.kube/4am-config
+  - dev-infra-api:
+      panes:
+        - dev-infra-api: export KUBECONFIG=/Users/samhuang/.kube/dev-infra-api
+        - dev-infra-api: export KUBECONFIG=/Users/samhuang/.kube/dev-infra-api
+  - infra-dev:
+      panes:
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+  - dev-infra-api: export KUBECONFIG=~/.kube/dev-infra-api
+  - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test

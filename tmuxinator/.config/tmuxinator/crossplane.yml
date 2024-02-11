@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/infra-controller.yml
+# /Users/samhuang/.config/tmuxinator/crossplane.yml
 
-name: infra-controller
-root: /Users/samhuang/git/01.controller/infra-controller
+name: crossplane
+root: ~/git/crossplane
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,9 +51,7 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - editor:
-          - gvm use go1.18.10
-          - lvim .
+        - vim:
+            - gvm use go1.21.6
+            - lvim .
   - git: lazygit
-  - workspace: cd .
-

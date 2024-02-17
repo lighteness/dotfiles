@@ -48,9 +48,9 @@ windows = {
     -- 右上角
     top_right = {prefix = {"Ctrl", "Option"}, key = "I", message = "Top Right"},
     -- 左下角
-    left_bottom = {prefix = {"Ctrl", "Option"}, key = "J", message = "Left Bottom"},
+    left_bottom = {prefix = {"Ctrl", "Option"}, key = "N", message = "Left Bottom"},
     -- 右下角
-    right_bottom = {prefix = {"Ctrl", "Option"}, key = "K", message = "Right Bottom"},
+    right_bottom = {prefix = {"Ctrl", "Option"}, key = "M", message = "Right Bottom"},
     -- 1/9
     one = {prefix = {"Ctrl", "Option"}, key = "1", message = "1/9"},
     -- 2/9
@@ -81,7 +81,7 @@ windows = {
     right_2_3 = {prefix = {"Ctrl", "Option"}, key = "T", message = "Right 2/3(Horizontal screen)Or Bottom 2/3(Vertical screen)"},
     -- 居中
   -- disable it and leave it for snapshot
-    center = {prefix = {"Ctrl", "Option"}, key = "M", message = "Center"},
+    center = {prefix = {"Ctrl", "Option"}, key = "H", message = "Center"},
     -- 等比例放大窗口
     zoom = {prefix = {"Ctrl", "Option"}, key = "=", message = "Zoom Window"},
     -- 等比例缩小窗口

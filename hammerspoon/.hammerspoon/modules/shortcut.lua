@@ -14,7 +14,7 @@ applications = {
     {prefix = {"Option"}, key = "F", message="Finder", bundleId="com.apple.finder"},
     {prefix = {"Option"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
     {prefix = {"Option"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
-    {prefix = {"Option"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
+    {prefix = {"Option"}, key = ";", message="Lark", bundleId="com.larksuite.larkApp"},
     {prefix = {"Option"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"Option"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"Option"}, key = "M", message="email", bundleId="com.apple.mail"},

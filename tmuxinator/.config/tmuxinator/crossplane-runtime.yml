@@ -54,5 +54,5 @@ windows:
       panes:
         - vim:
             - gvm use go1.21.6
-            - lvim .
+            - nvim .
   - git: lazygit

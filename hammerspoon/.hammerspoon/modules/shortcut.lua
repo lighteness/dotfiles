@@ -1,8 +1,8 @@
 
 input_methods = {
-   abc  = { prefix = {"Option"}, key = "J", message="ABC"},
+   abc  = { prefix = {"CMD"}, key = "J", message="ABC"},
    -- chinese  = { prefix = {"Option"}, key = "K", message="拼音"}
-   sougou  = { prefix = {"Option"}, key = "K", message="搜狗"}
+   sougou  = { prefix = {"CMD"}, key = "K", message="搜狗"}
 }
 
 

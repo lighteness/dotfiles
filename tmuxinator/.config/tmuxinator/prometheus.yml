@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/infra-api.yml
+# /Users/samhuang/.config/tmuxinator/prometheus.yml
 
-name: infra-api
-root: ~/git/01.controller/infra-api
+name: prometheus
+root: ~/git/prometheus
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,11 +51,4 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - editor:
-            - gvm use go1.18.10
-            - nvim .
-  - git: lazygit
-  - workspace:
-      panes:
-        - editor:
-            - gvm use go1.18.10
+        - nvim

@@ -8,19 +8,22 @@ input_methods = {
 
 -- 应用切换快捷键配置
 applications = {
+    -- C V is reserved for clipboard
+    -- S is reserved for save 
+    -- J K is reserved for input methods
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
-    {prefix = {"Option"}, key = "W", message="WeChat", bundleId="com.tencent.xinWeChat"},
-    {prefix = {"Option"}, key = "V", message="VSCode", bundleId="com.microsoft.VSCode"},
-    {prefix = {"Option"}, key = "F", message="Finder", bundleId="com.apple.finder"},
-    {prefix = {"Option"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
-    {prefix = {"Option"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
-    {prefix = {"Option"}, key = ";", message="Lark", bundleId="com.larksuite.larkApp"},
-    {prefix = {"Option"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
-    {prefix = {"Option"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
-    {prefix = {"Option"}, key = "M", message="email", bundleId="com.apple.mail"},
-    {prefix = {"Option"}, key = "2", message="things3", bundleId="com.culturedcode.ThingsMac"},
-    {prefix = {"Option", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
-    {prefix = {"Option"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
+    {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
+    {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
+    {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
+    {prefix = {"CMD"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
+    {prefix = {"CMD"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
+    {prefix = {"CMD"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
+    -- {prefix = {"CMD"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
+    {prefix = {"CMD"}, key = "M", message="email", bundleId="com.apple.mail"},
+    {prefix = {"CMD"}, key = "3", message="things3", bundleId="com.culturedcode.ThingsMac"},
+    {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
+    {prefix = {"CMD"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
 
 }
 

@@ -59,3 +59,32 @@ windows:
       panes:
         - editor:
             - gvm use go1.18.10
+  - byoc-uat:
+      panes:
+        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
+        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
+  - infra-dev:
+      panes:
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
+  - ali-uat:
+      panes:
+        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
+        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
+  - 3-sit-vdc-test: 
+      panes:
+      - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
+      - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
+  - 3-uat-infra-api: 
+      panes:
+      - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
+      - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
+  - uat-milvus-us-west-2:
+      panes:
+      - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2
+      - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2
+  - uat-az-milvus-westus3-1: 
+      panes:
+      - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1
+      - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1
+

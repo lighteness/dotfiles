@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/k9s.yml
+# /Users/samhuang/.config/tmuxinator/vdc-deploy.yml
 
-name: k9s-uat
-root: ~/.kube/
+name: vdc-deploy
+root: ~/git/03.gitops/vdc-deploy
 
 # Optional tmux socket
 # socket_name: foo
@@ -45,32 +45,15 @@ root: ~/.kube/
 # attach: false
 
 windows:
-  - byoc-uat:
+  - editor:
+      layout: main-vertical
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
       panes:
-        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
-        - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat
-  - infra-dev:
+        - nvim
+  - git: lazygit
+  - workspace:
       panes:
-        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
-        - infra-dev: export KUBECONFIG=~/.kube/3-infra-dev
-  - ali-uat:
-      panes:
-        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
-        - ali-uat: export KUBECONFIG=~/.kube/ali-uat
-  - 3-sit-vdc-test: 
-      panes:
-      - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
-      - 3-sit-vdc-test: export KUBECONFIG=~/.kube/3-sit-vdc-test
-  - 3-uat-infra-api: 
-      panes:
-      - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
-      - 3-uat-infra-api: export KUBECONFIG=~/.kube/3-uat-infra-api
-  - uat-milvus-us-west-2:
-      panes:
-      - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2
-      - uat-milvus-us-west-2: export KUBECONFIG=~/.kube/uat-milvus-us-west-2
-  - uat-az-milvus-westus3-1: 
-      panes:
-      - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1
-      - uat-az-milvus-westus3-1: export KUBECONFIG=~/.kube/uat-az-milvus-westus3-1
+        - editor:
 

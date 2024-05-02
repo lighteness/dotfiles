@@ -53,10 +53,10 @@ windows:
 
       panes:
         - editor:
-            - gvm use go1.16.15
+            - gvm use go1.18.10
             - nvim .
   - git: lazygit
   - workspace:
       panes:
         - editor:
-            - gvm use go1.16.15
+            - gvm use go1.18.10

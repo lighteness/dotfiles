@@ -1,8 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/crossplane-runtime.yml
+# /Users/samhuang/.config/tmuxinator/infra-controller.yml
 
-name: crossplane-runtime
-
-root: ~/git/crossplane-runtime
+name: twg
+root: /Users/samhuang/git/twg/
 
 # Optional tmux socket
 # socket_name: foo
@@ -52,11 +51,12 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim:
-            - gvm use go1.21.6
-            - nvim .
+        - editor:
+          - gvm use go1.18.10
+          - nvim .
   - git: lazygit
   - workspace:
       panes:
         - editor:
-            - gvm use go1.21.6
+          - gvm use go1.18.10
+

@@ -1,8 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/crossplane-runtime.yml
+# /Users/samhuang/.config/tmuxinator/kubebuilder-cronjob-tutorial.yml
 
-name: crossplane-runtime
-
-root: ~/git/crossplane-runtime
+name: kubebuilder-cronjob-tutorial
+root: ~/git/kubebuilder/docs/book/src/cronjob-tutorial/testdata/project
 
 # Optional tmux socket
 # socket_name: foo
@@ -52,7 +51,7 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim:
+        - editor:
             - gvm use go1.21.6
             - nvim .
   - git: lazygit

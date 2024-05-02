@@ -9,6 +9,7 @@ HISTFILE=~/.zsh_history
 plug "$HOME/.config/zsh/kube.zsh"
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
+plug "$HOME/.config/zsh/cli.zsh"
 
 # plugins
 plug "esc/conda-zsh-completion"
@@ -27,6 +28,8 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 # plug "spaceship-prompt/spaceship-prompt"
 
+source  /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 # keybinds
 bindkey '^ ' autosuggest-accept
 
@@ -35,4 +38,4 @@ if command -v bat &> /dev/null; then
   alias catt="bat --theme \"Visual Studio Dark+\"" 
 fi
 
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+

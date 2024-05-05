@@ -52,6 +52,6 @@ windows:
       # synchronize: after
       panes:
         - editor:
-          - gvm use go1.21.6
+          
           - nvim .
   - git: lazygit

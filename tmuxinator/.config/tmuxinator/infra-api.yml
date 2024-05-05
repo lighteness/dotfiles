@@ -52,13 +52,13 @@ windows:
       # synchronize: after
       panes:
         - editor:
-            - gvm use go1.18.10
+            
             - nvim .
   - git: lazygit
   - workspace:
       panes:
         - editor:
-            - gvm use go1.18.10
+            
   - byoc-uat:
       panes:
         - byoc-uat: export KUBECONFIG=~/.kube/byoc-uat

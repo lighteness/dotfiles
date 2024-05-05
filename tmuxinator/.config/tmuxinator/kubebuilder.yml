@@ -51,10 +51,10 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       panes:
         - editor:
-            - gvm use go1.21.6
+            
             - nvim .
   - git: lazygit
   - workspace:
       panes:
         - editor:
-            - gvm use go1.21.6
+            

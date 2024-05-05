@@ -60,4 +60,3 @@ export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Ho
 
 # GOBIN
 #export PATH="$GOBIN:$PATH"
-#export GOBIN="/Users/samhuang/.gvm/pkgsets/go1.19.3/global/bin"

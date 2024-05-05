@@ -53,10 +53,10 @@ windows:
       # synchronize: after
       panes:
         - editor:
-          - gvm use go1.20.8
+          
           - nvim .
   - git: lazygit
   - workspace:
       panes:
         - editor:
-          - gvm use go1.20.8
+          

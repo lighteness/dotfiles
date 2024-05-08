@@ -486,5 +486,13 @@
     "files.autoSave": "afterDelay",
     "editor.renderWhitespace": "all",
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "[go]": {
+        
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    }
 }

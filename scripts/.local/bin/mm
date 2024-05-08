@@ -1,0 +1,25 @@
+#!/bin/bash
+
+TMUXINATOR_HOME=~/.config/tmuxinator
+
+# Get the current folder name
+projectName=$(basename "$PWD")
+
+# Get the folder path
+projectPath="$PWD"
+
+template=$TMUXINATOR_HOME/template.yml
+target=$TMUXINATOR_HOME/$projectName.yml
+
+if [ "$#" -eq 0 ]; then
+  if [ -f "$target" ]; then
+     echo "The file already exists. please use -f to force override it."
+     exit 0;
+  fi
+fi
+
+sed "s#{PROJECT_NAME}#$projectName#g; s#{PROJECT_ROOT_PATH}#$projectPath#g" $template > $target
+
+echo "$target created.."
+
+#tmuxinator start template $(find ~/git -maxdepth 2 -type d | fzf)

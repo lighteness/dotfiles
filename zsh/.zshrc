@@ -28,7 +28,8 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 # plug "spaceship-prompt/spaceship-prompt"
 
-source /usr/local/opt/asdf/libexec/asdf.sh
+source  /opt/homebrew/opt/asdf/libexec/asdf.sh
+source ~/.asdf/plugins/golang/set-env.zsh
 
 # keybinds
 bindkey '^ ' autosuggest-accept

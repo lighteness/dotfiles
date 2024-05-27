@@ -1,5 +1,6 @@
 .DS_Store
 scripts/.local/bin/lvim
 tmux/.config/tmux/plugins
+tmuxinator/.config/tmuxinator
 lvim/.config/lvim/lazy-lock.json
 k9s/.config/k9s

@@ -39,9 +39,6 @@ unset __conda_setup
 #export KUBECONFIG=$(find ~/.kube -maxdepth 1 -type f -not -name 'kubectx' | tr '\n' ':')
 
 
-# http proxy
-# export https_proxy="http://localhost:41091"
-# export http_proxy="http://localhost:41091"
 
 # kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

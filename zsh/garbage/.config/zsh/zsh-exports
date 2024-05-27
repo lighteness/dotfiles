@@ -30,9 +30,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# http proxy
-export https_proxy="http://localhost:41091"
-export http_proxy="http://localhost:41091"
 
 # kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

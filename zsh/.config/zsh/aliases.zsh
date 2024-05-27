@@ -62,6 +62,7 @@ alias k='kubectl'
 alias kn='kubectl ns'
 alias kx='kubectl ctx'
 alias kk='k9s'
+alias kube='export KUBECONFIG="/Users/samhuang/.kube/$(ls ~/.kube | fzf)"'
 
 alias tg='terragrunt'
 
@@ -69,6 +70,7 @@ alias tg='terragrunt'
 alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
 alias jdk14="export JAVA_HOME=$JAVA_14_HOME"
 alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
+alias asdf_java="source ~/.asdf/plugins/java/set-java-home.zsh"
 
 alias vim="nvim"
 alias vi="nvim"
@@ -83,6 +85,15 @@ alias mux="tmuxinator"
 alias cat="bat"
 alias tree="exa -T"
 alias ls="exa"
+alias r="ranger"
+
+
+alias tpr="tkn pipelinerun"
+alias ttp="tkn pipeline"
+alias ttt="tkn task"
+alias ttr="tkn taskrun"
+
+alias proxy='export https_proxy="http://localhost:7890";export http_proxy="http://localhost:7890";echo -e "Proxy on"'
 
 if [[ $TERM == "xterm-kitty" ]]; then
   alias ssh="kitty +kitten ssh"

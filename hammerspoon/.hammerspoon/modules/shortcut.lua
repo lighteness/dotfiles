@@ -8,22 +8,30 @@ input_methods = {
 
 -- 应用切换快捷键配置
 applications = {
-    -- C V is reserved for clipboard
+    -- X C V is reserved for clipboard
     -- S is reserved for save 
+    -- D is reserved for iterm2 split
+    -- A is reserved for select all
     -- J K is reserved for input methods
+    -- P is reserved for vscode command list
     -- {prefix = {"Option"}, key = "Q", message="QQ", bundleId="com.tencent.qq"},
-    {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
+    {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"CMD"}, key = "2", message="VSCode", bundleId="com.microsoft.VSCode"},
+    {prefix = {"CMD"}, key = "3", message="Zed", bundleId="dev.zed.Zed"},
+    {prefix = {"CMD"}, key = "4", message="Sublime", bundleId="com.sublimetext.4"},
+    {prefix = {"CMD"}, key = "F1", message="things3", bundleId="com.culturedcode.ThingsMac"},
+    {prefix = {"CMD"}, key = ".", message="WeChat", bundleId="com.tencent.xinWeChat"},
     {prefix = {"CMD"}, key = "-", message="Finder", bundleId="com.apple.finder"},
     {prefix = {"CMD"}, key = "B", message="Chrome", bundleId="com.google.Chrome"},
+    -- {prefix = {"CMD"}, key = "D", message="Calendar", bundleId="com.apple.iCal"},
     {prefix = {"CMD"}, key = "N", message="onenote", bundleId="com.microsoft.onenote.mac"},
     {prefix = {"CMD"}, key = "L", message="Lark", bundleId="com.larksuite.larkApp"},
     -- {prefix = {"CMD"}, key = "T", message="iTerm2", bundleId="com.googlecode.iterm2"},
-    {prefix = {"CMD"}, key = "1", message="iTerm2", bundleId="com.googlecode.iterm2"},
     {prefix = {"CMD"}, key = "M", message="email", bundleId="com.apple.mail"},
-    {prefix = {"CMD"}, key = "3", message="things3", bundleId="com.culturedcode.ThingsMac"},
     {prefix = {"CMD", "Ctrl"}, key = "N", message="notion", bundleId="notion.id"},
     {prefix = {"CMD"}, key = "O", message="openlens", bundleId="com.electron.open-lens"},
+    {prefix = {"CMD"}, key = "I", message="insomnia", bundleId="com.insomnia.app"},
+    -- {prefix = {"CMD"}, key = "P", message="SnapNDrag Pro", bundleId="com.yellowmug.SnapNDrag"},
 
 }
 

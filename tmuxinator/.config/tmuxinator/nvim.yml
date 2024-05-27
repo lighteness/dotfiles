@@ -1,7 +1,7 @@
-# /Users/samhuang/.config/tmuxinator/nvim.yml
+# /Users/samhuang/.config/tmuxinator/iam.yml
 
 name: nvim
-root: ~/.config/nvim
+root: /Users/samhuang/.config/nvim
 
 # Optional tmux socket
 # socket_name: foo
@@ -51,4 +51,10 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - nvim
+        - editor:
+          - nvim 
+  - git: lazygit
+  - workspace: 
+      panes:
+        -
+        -

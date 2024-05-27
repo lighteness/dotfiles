@@ -53,5 +53,5 @@ windows:
       panes:
         - editor:
           
-          - nvim .
+          - nvim
   - git: lazygit

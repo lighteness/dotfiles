@@ -28,7 +28,20 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 # plug "spaceship-prompt/spaceship-prompt"
 
-source  /opt/homebrew/opt/asdf/libexec/asdf.sh
+UNAME_MACHINE="$(/usr/bin/uname -m)"
+
+if [[ "${UNAME_MACHINE}" == "arm64" ]]
+then
+  # On ARM macOS, this script installs to /opt/homebrew only
+  HOMEBREW_PREFIX="/opt/homebrew"
+  HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}"
+else
+  # On Intel macOS, this script installs to /usr/local only
+  HOMEBREW_PREFIX="/usr/local"
+  HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
+fi
+
+source  "$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh"
 source ~/.asdf/plugins/golang/set-env.zsh
 
 # keybinds

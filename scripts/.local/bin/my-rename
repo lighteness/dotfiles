@@ -1,0 +1,138 @@
+#!/usr/bin/env node
+
+// workspace: Users/admin/dotfiles/scripts/.local/bin
+// presiquisites:
+//    1. nodejs runtime
+//    2. the name of file to renamed should be like <number>.<fileType>, for example 1.mp4, 2.mp4, 3.mp4
+//    3. names.txt should be in the same directory
+// example:
+//
+// dry run
+// 	node my-rename.js -p '/Volumes/Qnap_Volume3/前端/视频 js dom/Ultimate Courses - JavaScript DOM 2020-3' -D
+//
+// change the name of file whose type is .mp4
+// 	node my-rename.js -p '/Volumes/Qnap_Volume3/前端/视频 js dom/Ultimate Courses - JavaScript DOM 2020-3' -t .mp4 -D
+//
+const fs = require("fs");
+const readline = require("readline");
+const path = require("path");
+
+function visitFiles(dirPath, fileType, dryRun = true, names) {
+  // Read directory contents
+  fs.readdir(dirPath, { withFileTypes: true }, (err, entries) => {
+    if (err) {
+      console.error("Error reading directory:", err);
+      return;
+    }
+
+    entries.forEach((entry) => {
+      const fullPath = path.join(dirPath, entry.name);
+      if (entry.isDirectory()) {
+        // Recurse if the entry is a directory
+        visitFiles(fullPath);
+      } else {
+        // Log file path or do something with the file
+        if (path.extname(fullPath) != fileType) {
+          return;
+        }
+
+        let newPath = getNewName(entry.name, fileType, names, dirPath);
+        if (dryRun) {
+          console.log(newPath);
+          return;
+        } else {
+          rename(fullPath, newPath);
+        }
+      }
+    });
+  });
+}
+
+function rename(oldPath, newPath) {
+  try {
+    fs.renameSync(oldPath, newPath);
+  } catch (err) {
+    console.error("Error renaming file:", err);
+  }
+}
+
+function getNewName(name, fileType, names, dirPath) {
+  let indexStr = path.basename(name, fileType);
+  const index = parseInt(indexStr, 10); // The second argument is the radix (base 10)
+
+  let ret = path.join(dirPath, `${index}.${names[index-1]}${fileType}`);
+  return ret;
+}
+
+// Function to parse command-line arguments
+function getDirectoryPath() {
+  const args = process.argv;
+  const index = args.indexOf("-p");
+  if (index !== -1 && args[index + 1]) {
+    return args[index + 1];
+  }
+  return null; // Return null if -p is not provided or has no value
+}
+
+function getFileType() {
+  const args = process.argv;
+  const index = args.indexOf("-t");
+  if (index !== -1 && args[index + 1]) {
+    return args[index + 1];
+  }
+  return null; // Return null if -p is not provided or has no value
+}
+
+function getDryRun() {
+  const args = process.argv;
+  const index = args.indexOf("-D");
+  if (index !== -1) {
+    return true;
+  }
+  return false;
+}
+
+const dirPath = getDirectoryPath();
+const fileType = getFileType() || ".mp4";
+const isDryRun = getDryRun();
+
+if (!dirPath) {
+  console.error("Please provide a directory path using -p parameter");
+  process.exit(1);
+}
+//
+// } else {
+
+function readLines(filePath) {
+  return new Promise((resolve, reject) => {
+    const lines = [];
+    const rl = readline.createInterface({
+      input: fs.createReadStream(filePath),
+      crlfDelay: Infinity,
+    });
+
+    rl.on("line", (line) => {
+      lines.push(line);
+    });
+
+    rl.on("close", () => {
+      resolve(lines);
+    });
+
+    rl.on("error", (err) => {
+      reject(err);
+    });
+  });
+}
+
+// Usage example:
+const file = "names.txt"; // Replace with your file path
+
+readLines(dirPath + "/" + file)
+  .then((lines) => {
+    // console.log(lines);
+    visitFiles(dirPath, fileType, isDryRun, lines);
+  })
+  .catch((err) => {
+    console.error("Error reading file:", err);
+  });
